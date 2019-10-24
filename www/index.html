@@ -1,0 +1,57 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+  <meta http-equiv="Content-Security-Policy" content="default-src * data: gap: https://ssl.gstatic.com; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'">
+  <script src="components/loader.js"></script>
+  <script src="components/jquery-3.4.1.min.js"></script>
+  <script src="components/acao.js"></script>
+
+
+  <link rel="stylesheet" href="components/loader.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+
+<div class="container">
+
+<label for="">Nome:</label>
+<input type="text" class="form-control" id="nomeUsuario">
+<p>
+<label for="">Função:</label>
+<select name="lista" id="lista" class="dado">
+        <option value="">-----------</option>
+        <option value="1">Programador</option>
+        <option value="2">Designer</option>
+        <option value="3">DBA</option>
+        <option value="4">Analista</option>
+        </select>
+<p>
+<div class="row">
+  <div class="col-xs-6">
+     <label for="">Entrada:</label>
+     <input type="time" id="horaEntrada">
+  </div>
+    <div class="col-xs-6">
+      <label for="">Saida:</label>
+      <input type="time" id="horaSaida">
+  </div>
+</div>
+
+
+
+<p>
+<button class="btn btn-default btn-block btn-lg" type="submit" class="calcular" id="calcular">Calcular</button>
+<p>
+<label for="">Valor a pagar:</label>
+<input type="text" class="form-control" id="valorPagar">
+
+<button class="btn btn-info btn-block btn-lg" type="submit" id="buscarPagamento">Buscar Pagamentos</button>
+</div>
+
+  
+</body>
+</html>
